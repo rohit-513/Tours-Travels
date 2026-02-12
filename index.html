@@ -1,1 +1,87 @@
-<!DOCTYPE html><html><head><title>My Simple Website</title><link rel="stylesheet" href="styles.css"></head><body><h1>Hello! This is my website deployed using CI/CD 😊</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dream Tours & Travels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Dream Tours & Travels</h1>
+    <p>Your Journey Begins Here</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#packages">Packages</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+    <h2>Explore The World</h2>
+    <p>Discover amazing places at affordable prices</p>
+</section>
+
+<section class="section" id="packages">
+    <h2>Popular Packages</h2>
+    <div class="packages">
+
+        <div class="card">
+            <h3>Goa Beach Tour</h3>
+            <p>3 Days / 2 Nights</p>
+            <p>₹9,999</p>
+        </div>
+
+        <div class="card">
+            <h3>Manali Adventure</h3>
+            <p>5 Days / 4 Nights</p>
+            <p>₹14,999</p>
+        </div>
+
+        <div class="card">
+            <h3>Kerala Backwaters</h3>
+            <p>4 Days / 3 Nights</p>
+            <p>₹12,999</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section" id="booking">
+    <h2>Book Your Tour</h2>
+    <form id="bookingForm">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        
+        <select id="package" required>
+            <option value="">Select Package</option>
+            <option>Goa Beach Tour</option>
+            <option>Manali Adventure</option>
+            <option>Kerala Backwaters</option>
+        </select>
+
+        <input type="date" id="date" required>
+        <button type="submit">Book Now</button>
+        <p id="bookingMessage"></p>
+    </form>
+</section>
+
+<section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Dream Tours & Travels | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
